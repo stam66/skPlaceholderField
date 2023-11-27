@@ -25,4 +25,4 @@ All properties have getter and setters - getters provide default values if empty
 <img width="611" alt="Screenshot 2023-11-27 at 01 50 11" src="https://github.com/stam66/skPlaceholderField/assets/5677273/0f754c94-597b-4552-ae41-d426e7c515fd">
 <br>
 The stack is best used as a plugin. Change colors, styles, placeholder text and textScaling (proportionate to field height). To edit an existing skPlacehodlerField, select it in the IDE, open the plugin and click the arrow top left. If no skPlaceholderField selected it will edit the field included with the stack.
-A 'reset' svg-button resets all properteis to default; a copy svg-button copies the field in the stack to place in the developer's stack.
+A 'reset' svg-button resets all properteis to default; a "copy" svg-button copies the field in the stack to place in the developer's stack.
