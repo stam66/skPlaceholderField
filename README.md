@@ -7,7 +7,7 @@ LiveCode Text field with configurable placeholder text<br>
 Click or tab into the skPlaceholderField. If field is empty, the placeholder/hint text will show with color and style as set by custom properties. On typing or pasting text the colour/style changes as per custom properties. <br><br>
 If setting the field text by script, send "exitField" to the field afterwards to trigger correct formatting.<br>
 Reset the all properties to default with **_resetProps_** (the only public handler)<br><br>
-**Note:** to prevent users from being able to select the placehodler text, the fields lockText is set to true when this is showing, which has the side effect of hiding the cursor. However the field remains selectable and the user can freely enter text, paste, or set it by script.
+**Note:** to prevent users from being able to select the placehodler text, the fields lockText is set to true when this is showing, which has the side effect of hiding the cursor. However the field remains selectable and the user can freely enter text, paste, or set it by script (keeping in mind that if used in IDE and not standalone, you have to '_Suspend development tools_' for Paste to work).
 ### Custom properties
 All properties have getter and setters - getters provide default values if empty<br>
 
