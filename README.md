@@ -1,5 +1,7 @@
 # skPlaceholderField
 LiveCode Text field with configurable placeholder text<br>
+A controller stack/plugin is included to visually set custom properties.<br>
+Longer term this will be converted to a script widget. <br>
 [Change log](changelog.md)<br><br>
 <img width="313" alt="Screenshot 2023-11-20 at 14 04 19" src="https://github.com/stam66/skPlaceholderField/assets/5677273/51013728-38c8-4c16-9a79-d0b3ecc071b3">
 
