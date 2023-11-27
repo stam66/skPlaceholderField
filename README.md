@@ -1,6 +1,7 @@
 # skPlaceholderField
 LiveCode Text field with configurable placeholder text<br>
-Current version: 1.1 <br>[Change log](changelog.md)<br>
+Current version: 1.1 <br>[Change log](changelog.md)<br><br>
+<img width="313" alt="Screenshot 2023-11-20 at 14 04 19" src="https://github.com/stam66/skPlaceholderField/assets/5677273/51013728-38c8-4c16-9a79-d0b3ecc071b3">
 
 **Features**
  - If field is empty, will show a hint/placeholder text with an indicative text style (defult = italic, light gray)
@@ -11,7 +12,6 @@ Current version: 1.1 <br>[Change log](changelog.md)<br>
  - Properties are not hardcoded - they are configured as custom properties who's getter will provide a default value if empty and the setter will reformat the text as needed.
 A controller stack/plugin is included to visually set custom properties.<br>
 Longer term this will be converted to a script widget. <br>
-<img width="313" alt="Screenshot 2023-11-20 at 14 04 19" src="https://github.com/stam66/skPlaceholderField/assets/5677273/51013728-38c8-4c16-9a79-d0b3ecc071b3">
 
 ### Usage
 Click or tab into the skPlaceholderField. If field is empty, the placeholder/hint text will show with color and style as set by custom properties. On typing or pasting text the colour/style changes as per custom properties. <br><br>
