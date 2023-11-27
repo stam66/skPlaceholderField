@@ -1,6 +1,7 @@
 # skPlaceholderField
 LiveCode Text field with configurable placeholder text<br>
-[Change log](changelog.md)
+[Change log](changelog.md)<br><br>
+<img width="313" alt="Screenshot 2023-11-20 at 14 04 19" src="https://github.com/stam66/skPlaceholderField/assets/5677273/51013728-38c8-4c16-9a79-d0b3ecc071b3">
 
 ### Usage
 Click or tab into the skPlaceholderField. If field is empty, the placeholder/hint text will show with color and style as set by custom properties. On typing or pasting text the colour/style changes as per custom properties. <br><br>
@@ -19,4 +20,9 @@ All properties have getter and setters - getters provide default values if empty
 
 ### To use the controller stack
 - either configure the field as you want and click the 'copy' icon to copy to mainstack, or
-- select an existing skPlaceholderField and click the blue arrow top left. If no selected object or no skPlaceholderField found, it defaults to the controller's prototype field
+- select an existing skPlaceholderField and click the blue arrow top left. If no selected object or no skPlaceholderField selected, it defaults to the controller's prototype field
+
+<img width="611" alt="Screenshot 2023-11-27 at 01 50 11" src="https://github.com/stam66/skPlaceholderField/assets/5677273/0f754c94-597b-4552-ae41-d426e7c515fd">
+<br>
+The stack is best used as a plugin. Change colors, styles, placeholder text and textScaling (proportionate to field height). To edit an existing skPlacehodlerField, select it in the IDE, open the plugin and click the arrow top left. If no skPlaceholderField selected it will edit the field included with the stack.
+A 'reset' svg-button resets all properteis to default; a copy svg-button copies the field in the stack to place in the developer's stack.
