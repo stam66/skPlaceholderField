@@ -1,3 +1,10 @@
+### Version 1.2
+Converted to from single field to a group to allow more flexbility and features.<br>
+##### New features
+- Placeholder is now a separate field, so both cursor and placeholder will behave as expected 
+- passwordField - set this to true to obscure text with bulletpoints. Show/Hide password button (field "disclosure") appears when passwordField true using the boolean custom property _obscureText_. When entering text, there is an adjustable delay from typing the letter to it being replaced with bullet points (custom property _uBulletDelay_)
+- animatedPlaceholder - set this to true to show the placeholder field quickly move off to the right on entering text and moving in from the right if field empty. Note that 'move' is a blocking action so necessarily the action is very brief to stop errors in text entry; it's also switched off if passwordField is true and the obscureText (= replace with bulletpoints) is true.
+
 ### Version 1.1
 - Simplified properties to minimum required:
   - uPlaceholderText -- the placeholder/hint text to show (defult = "Placeholder text")
