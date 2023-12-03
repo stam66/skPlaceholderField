@@ -1,3 +1,9 @@
+### Version 1.3
+- bug fixes to password field functions
+- improvment to controller stack - added automated detection ojbect selection, will automatically load properties of an skPlaceholderFieldGroup when selected or default to prototype if none selected
+- Controller stack simplified accordingly; the field top left shows the short name of the selected skPlaceholderFieldGroup, with its tooltip set to the long name of the selection
+- added new custom property _skPlaceholderFieldGroup_ that always returns true and identifies the group as such.
+
 ### Version 1.2
 Converted to from single field to a group to allow more flexbility and features.<br>
 ##### New features
