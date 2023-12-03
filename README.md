@@ -41,12 +41,10 @@ Reset the all properties to default with **_resetProps_** (the only public handl
 * **uShowDelay** - speed at which animated placeholder comes in from right when field text deleted (default = 200 ms)
 
 ### The controller stack
+- Plugin for creating or modifying skPlaceholderFieldGroup controls - drop into Plugins folder and restart IDE to install
 - Configure the prototype group within the the controller stack and click the 'copy' icon to copy/paste it to a topLevel stack
 - select an existing skPlaceholderField to edit it's properties within the controller stack (changes are mirrored in the prototype group).
-  - <br> When an skPlaceholderFieldGroup is selected, it's short name appears top left and the long name is set to the tooltip of the short name.
-  - - <br>If no selected object or no skPlaceholderField selected, it defaults to the controller's prototype field.
+  - When an skPlaceholderFieldGroup is selected, it's short name appears top left and the long name is set to the tooltip of the short name.
+  - If no selected object or no skPlaceholderField selected, it defaults to the controller's prototype field.
 <img width="600" alt="Screenshot 2023-12-03 at 14 25 05" src="https://github.com/stam66/skPlaceholderField/assets/5677273/bc4d8d54-0f72-4feb-b572-d3d7883b82aa">
 
-<br>
-The stack is best used as a plugin. Change colors, styles, placeholder text and textScaling (proportionate to field height). To edit an existing skPlacehodlerField, select it in the IDE, open the plugin and click the arrow top left. If no skPlaceholderField selected it will edit the field included with the stack.
-A 'reset' svg-button resets all properties to default; a "copy" svg-button copies the field in the controller stack to place in the developer's stack.
