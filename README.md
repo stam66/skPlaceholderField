@@ -1,7 +1,7 @@
 # skPlaceholderField
 LiveCode Text group-based widget providing a field with configurable placeholder text.  
 This is a group with 3 fields that enables placeholder text (hiding instantly or with animation) and password field functions.  
-Current version: 1.3 [Change log](changelog.md)    
+Current version: 1.3 - [Change log](changelog.md)    
 <img width="699" alt="Screenshot 2023-12-02 at 18 43 58" src="https://github.com/stam66/skPlaceholderField/assets/5677273/c45128c2-b2cc-4c6a-b669-b3e06c61f88a">
 
 **Features**
