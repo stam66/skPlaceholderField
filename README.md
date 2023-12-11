@@ -27,7 +27,7 @@ Reset the all properties to default with **_resetProps_** (the only public handl
 ### Custom properties
 * **skPlaceholderFieldGroup** a custom property that always returns true and identifies the group as an skPlaceholderFieldGroup
 * **uPlaceholderText** -- the placeholder/hint text to show (defult = "Placeholder text")
-* **uText** -- the text the field contains, used when passwordField = true
+* **uText** -- the text the user types in, read-only
 * **uNormalTextColor** -- textColor for user-entered text (default = 66,66,66)
 * **uNormalTextStyle** -- textStyle for user-entered text (default = "Plain")
 * **uScaleFactor** -- scales text relative to field height - defult = 0.4 (40% of the field's Height)
