@@ -1,7 +1,7 @@
 # skPlaceholderField
 LiveCode Text group-based widget providing a field with configurable placeholder text.  
 This is a group with 3 fields that enables placeholder text (hiding instantly or with animation) and password field functions.  
-Current version: 1.3 - [Change log](changelog.md)    
+Current version: 1.4 - [Change log](changelog.md)    
 <img width="699" alt="Screenshot 2023-12-02 at 18 43 58" src="https://github.com/stam66/skPlaceholderField/assets/5677273/c45128c2-b2cc-4c6a-b669-b3e06c61f88a">
 
 **Features**
@@ -17,7 +17,7 @@ Longer term this will be converted to a script widget.
 The field can be configured as a password field by setting the custom property _passwordField_ to true. The text is by default obscured with bulletpoints and a new button appears to the right of the field that can show/hide the password text by setting the boolean custom property _obscureText_.  
 A slight adjustable delay allows the letter typed to be viewed before quickly turning to a bullet point (set by the custom property _uBulletDelay_)  
 
-The planceholder text by default simply disappears when typing (not just entering the field) and reappears of the text in the field is deleted. By setting the animatedPlaceholder custom property to true, this will swiftly move off to the right when the user types and if text is deleted will move back from the right. Speed disappearing and appearing is settable with customProperties _uHideDelay_ and _uShowDelay_. Note that 'move' is a blocking action so setting long delays may lead to text entry errors (the first letter typed appearing after the second), so long delays should be avoided and this is disabled if entering obscured text in passowrd field mode.
+The planceholder text by default animates by being pushed to the right when typing (not just entering the field) and moves back in from the right if the text in the field is deleted. By setting the animatedPlaceholder custom property to false, the placeholderText will simply disappear/appear if typing in field or text deleted respectively. The speed of animation can be set in the controller stack or simply by setting the custom property _uDuration_.
 
 ### Usage
 Click or tab into the skPlaceholderField. If field is empty, the placeholder/hint text will show with color and style as set by custom properties. On typing or pasting text the colour/style changes as per custom properties. <br><br>
@@ -35,16 +35,17 @@ Reset the all properties to default with **_resetProps_** (the only public handl
 * **uPlaceholderTextStyle** -- placeholder text's textStyle (default = "Italic")
 * **passwordField** -- setting this to true obscures text with bullet ponts (default = false)
 * **ObscureText** -- shows/hides text if passwordField = true (defuault = true)
-* **uBulletDelay** -- slight delay from 0 to 500 ms in typed letter changing to bullet,like on iOS (default 150 ms)
+* **uBulletDelay** -- slight delay from 0 to 500 ms in typed letter changing to bullet,like on iOS (default 250 ms)
 * **aminatedPlaceholder** - animates placeholder showing or hiding with moving in or out from the right (default = false)
-* **uHideDelay** - speed at which animated placeholder text moves off to the right (default = 100 ms)
-* **uShowDelay** - speed at which animated placeholder comes in from right when field text deleted (default = 200 ms)
+* **uDuration** - speed at which animated placeholder text moves in or out from the right (default = 250 ms)
 
 ### The controller stack
 - Plugin for creating or modifying skPlaceholderFieldGroup controls - drop into Plugins folder and restart IDE to install
-- Configure the prototype group within the the controller stack and click the 'copy' icon to copy/paste it to a topLevel stack
-- select an existing skPlaceholderField to edit it's properties within the controller stack (changes are mirrored in the prototype group).
-  - When an skPlaceholderFieldGroup is selected, it's short name appears top left and the long name is set to the tooltip of the short name.
-  - If no selected object or no skPlaceholderField selected, it defaults to the controller's prototype field.
-<img width="600" alt="Screenshot 2023-12-03 at 14 25 05" src="https://github.com/stam66/skPlaceholderField/assets/5677273/bc4d8d54-0f72-4feb-b572-d3d7883b82aa">
+- If a topStack is present, the copy button will simply place the group on the current card of the topStack. To copy instead, option-click. If no topStack present (ie no normal windows) it will copy the group control to the clipboard instead.
+- select an existing skPlaceholderField to edit it's properties within the controller stack.
+  - When an placeHolderGroup is selected, it's short name appears top left and the long name is set to the tooltip of the short name.
+  - To reset the properties of a selected placeholderGroup, click the red reset button.
+- if no placeholderGroups selected, the controls are inaccessible.
+<img width="393" alt="Screenshot 2023-12-11 at 15 14 26" src="https://github.com/stam66/skPlaceholderField/assets/5677273/140d91c2-de77-4436-a553-2405c2dd3391">
+
 
