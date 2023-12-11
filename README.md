@@ -11,6 +11,8 @@ Current version: 1.4 - [Change log](changelog.md)
  - Textsize is determined by field height - and configurable as a percentagle of field height (from 10% to 90% - 0.1 to 0.9)
  - Text is centered vertically always, unless the text exceelds the formattedHeight of the field, in which case it's alight to top vertically
  - Properties are not hardcoded - they are configured as custom properties who's getter will provide a default value if empty and the setter will reformat the text as needed.
+ - New in 1.4: Will take on the parent's borderColor, borderWidth and backgroundColor if changed. Not so useful as group, intended mainly for conversion to script widget
+ - New in 1.4: Emits a fieldAction message on exiting or closing the field, that can be managed at parent level.
 A controller stack/plugin is included to visually set custom properties.<br>
 Longer term this will be converted to a script widget.  
 
