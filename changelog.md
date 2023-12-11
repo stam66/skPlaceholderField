@@ -4,6 +4,7 @@
 - Password field with obscured text can have animation as well now!
 - Changed controller stack - prototype removed and switching between controls made more robust
 - NEW: will pick up **parent's** backgroundColor, borderWidth and borderColor if changed. Not so useful as group, intended for script widget.
+- NEW: Emits a fieldAction message on exiting or closing the field, that can be managed at parent level.
 - Fixed copy/paste/place issues
 - Smaller bug fixes
 
