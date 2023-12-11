@@ -1,5 +1,5 @@
 ### Version 1.4
-- Fixed animation issue thank to @BerndN
+- Fixed animation issue thanks to @BerndN's excellent suggestion (what a liveCode guru!)
 - With this fix, the separate hide/show delays removed and replaced with single uDuration custom property.
 - Password field with obscured text can have animation as well now!
 - Changed controller stack - prototype removed and switching between controls made more robust
