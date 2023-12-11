@@ -3,6 +3,7 @@
 - With this fix, the separate hide/show delays removed and replaced with single uDuration custom property.
 - Password field with obscured text can have animation as well now!
 - Changed controller stack - prototype removed and switching between controls made more robust
+- NEW: will pick up **parent's** backgroundColor, borderWidth and borderColor if changed. Not so useful as group, intended for script widget.
 - Fixed copy/paste/place issues
 - Smaller bug fixes
 
