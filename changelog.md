@@ -1,3 +1,11 @@
+### Version 1.4
+- Fixed animation issue thanks to @BerndN's excellent suggestion (what a liveCode guru!)
+- With this fix, the separate hide/show delays removed and replaced with single uDuration custom property.
+- Password field with obscured text can have animation as well now!
+- Changed controller stack - prototype removed and switching between controls made more robust
+- Fixed copy/paste/place issues
+- Smaller bug fixes
+
 ### Version 1.3
 - bug fixes to password field functions
 - improvment to controller stack - added automated detection ojbect selection, will automatically load properties of an skPlaceholderFieldGroup when selected or default to prototype if none selected
